@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Warning - Warna kuning</title>
+    </head>
+    <body>
+    <script>
+        setInterval(function(){
+            document.getElementsByTagName("body")[0].style.backgroundColor = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
+            window.navigator.vibrate(290);
+        }, 300);
+    </script>
+    </body>
+</html>
